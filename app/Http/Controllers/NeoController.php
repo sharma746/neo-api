@@ -22,9 +22,9 @@ class NeoController extends Controller
     }
     public function getapidata(Request $request)
     {  
-	    $from       = $request->from;
-        $to   = $request->to;
-        $url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=".$from."&"."end_date=".$to."&api_key=fbccNcc7qfSEd29vHq9eX4O3hZgb4bAugrX4OqZo";
+	    $from= $request->from;
+        $to= $request->to;
+        $url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=".$from."&"."end_date=".$to."&detailed=true&api_key=DEMO_KEY";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
