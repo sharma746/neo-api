@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::get('getneobydate', 'App\Http\Controllers\NeoController@getneobydate');
 Route::post('collectdate', 'App\Http\Controllers\NeoController@collectdate');
